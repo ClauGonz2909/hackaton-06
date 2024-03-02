@@ -10,7 +10,6 @@ body {
 }
 
 main {
-  width: 80%;
   background-color: rgb(217, 179, 179);
 }
 
@@ -70,4 +69,7 @@ header {
 .ahorros {
   background-color: bisque;
   margin: 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
 }/*# sourceMappingURL=styles.css.map */
