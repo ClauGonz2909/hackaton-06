@@ -9,21 +9,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  background-color: rgb(217, 179, 179);
-}
-
 header {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 48px 36px 48px;
+  padding: 0px 48px;
+  height: 100px;
 }
 
 .panel-interior {
-  background-color: aquamarine;
-  padding: 36px 48px 36px 48px;
+  padding: 0px 48px;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .panel-interior h1 {
@@ -34,36 +34,45 @@ header {
   font-size: 14px;
 }
 
-.estado-cuenta {
-  margin: 0px 20px;
+.navigation img {
+  width: 30px;
 }
 
 .estado-cuenta-saldo {
-  display: flex;
-  justify-content: space-between;
-  width: 1342px;
-  height: 160px;
-  top: 244px;
-  left: 48px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 75% 1fr;
+  grid-gap: 20px;
 }
 
 .estado-cuenta-saldo .columna1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.columna1 img {
+  width: 40px;
 }
 
 .estado-cuenta-saldo .columna2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.columna2 img {
+  width: 40px;
 }
 
 .ahorros {
-  background-color: bisque;
-  margin: 0px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  grid-gap: 20px;
+}
+
+.ahorros .info {
+  border: 1px solid gray;
 }/*# sourceMappingURL=styles.css.map */
