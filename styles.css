@@ -101,6 +101,12 @@ header {
 body {
   background-color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
 }
 
 .panel-interior {
@@ -166,7 +172,13 @@ body {
 }
 
 .columna2 img {
-  width: 40px;
+  width: 30px;
+}
+
+.columna2 div h3 {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  color: rgb(150, 144, 144);
 }
 
 .nuevo-ahorro {
