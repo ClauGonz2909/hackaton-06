@@ -1,0 +1,76 @@
+.ahorros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+ }
+
+ .titulo h4 {
+    display: inline-block;
+    vertical-align: super;
+}
+
+.titulo img {
+    width: 30px;
+    margin-right: 5px;
+    background: red;
+}
+
+ 
+  .ahorros{
+    .info{
+    border: 1px solid $grisito;
+    border-radius: 5px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 20px;
+
+    }
+  }
+
+ .barrita div{
+    height: 15px;
+    background-color: #5144e9;
+    border-radius: 10px;
+ }
+.saldo-interno{
+    display: flex;
+    justify-content: space-between;
+}
+.saldo-interno .montos span:nth-child(1){
+    color: #4f46e5;
+    font-size: 18px;
+
+}
+.saldo-interno .montos span:nth-child(2){
+    color: #b8b6f7;
+    font-size: 12px;
+}
+.saldo-interno .montos span:nth-child(3){
+    color: #b8b6f7;
+    font-size: 12px;
+
+}
+.saldo-interno .porcentaje span{
+    color: #5b6776;
+}
+
+.ahorros .info:nth-child(1) .saldo .barrita div{
+    width: 30%;
+}
+.ahorros .info:nth-child(2) .saldo .barrita div{
+    width:50%;
+}
+.ahorros .info:nth-child(3) .saldo .barrita div{
+    width: 70%;
+}
+.ahorros .info:nth-child(4) .saldo .barrita div{
+    width: 30%;
+}
+.ahorros .info:nth-child(5) .saldo .barrita div{
+    width: 90%;
+}
+.ahorros .info:nth-child(6) .saldo .barrita div{
+    width: 20%;
+}
