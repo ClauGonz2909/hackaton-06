@@ -5,10 +5,16 @@ header {
   align-items: center;
   padding: 0px 48px;
   height: 100px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.iconos-header .logo {
+  display: none;
 }
 
 .navigation img {
   width: 30px;
+  cursor: pointer;
 }
 
 .ahorros {
@@ -36,6 +42,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   padding: 0px 20px;
+  cursor: pointer;
 }
 
 .barrita div {
@@ -125,6 +132,10 @@ main {
   font-size: 14px;
 }
 
+.estado-cuenta {
+  margin-bottom: 20px;
+}
+
 .estado-cuenta-saldo {
   display: grid;
   grid-template-columns: 75% 1fr;
@@ -151,6 +162,7 @@ main {
 .columna1 img {
   width: 25px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .estado-cuenta-saldo .columna2 {
@@ -165,6 +177,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .estado-cuenta-saldo .columna2 div:first-child {
@@ -189,6 +202,7 @@ main {
   border: 1px solid #e2e8f0;
   border-radius: 5px;
   padding: 10px 0px;
+  cursor: pointer;
 }
 
 .nuevo-ahorro img {
@@ -197,4 +211,93 @@ main {
 
 .nuevo-ahorro h5 {
   color: #5144e9;
+}
+
+@media (max-width: 991px) {
+  .columna2 div h3 {
+    text-align: center;
+  }
+  .columna2 img {
+    width: 25px;
+  }
+  .ahorros {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding-inline: 0px;
+  }
+  .ahorros {
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+  }
+  .ahorros .info {
+    height: 180px;
+    justify-content: space-evenly;
+  }
+  .panel-interior {
+    height: auto;
+    padding-block: 20px;
+    padding-inline: 0px;
+  }
+  .panel-interior h1 {
+    font-size: 37px;
+  }
+  .panel-interior p {
+    font-size: 18px;
+    color: gray;
+    padding-top: 12px;
+  }
+  .iconos-header .ico {
+    display: none;
+  }
+  .iconos-header .logo {
+    display: block;
+    width: 145px;
+  }
+  .estado-cuenta {
+    padding-top: 20px;
+  }
+  .estado-cuenta-saldo {
+    grid-template-columns: 1fr;
+  }
+  .estado-cuenta-saldo .columna2 {
+    height: 130px;
+  }
+  .columna2 img {
+    width: 35px;
+  }
+  .columna2 div h3 {
+    font-size: 1.2rem;
+  }
+  .nuevo-ahorro {
+    margin-top: 20px;
+    border: 2px solid #5144e9;
+    border-radius: 10px;
+    flex-direction: row;
+    padding: 20px;
+  }
+  .titulo h4 {
+    font-size: 20px;
+  }
+  .titulo p {
+    font-size: 14px;
+  }
+  .saldo-interno {
+    padding-bottom: 8px;
+  }
+  .saldo-interno .montos span:nth-child(1) {
+    color: #4f46e5;
+    font-size: 19px;
+  }
+  .icono-morado {
+    margin-right: 10px;
+  }
+  .nuevo-ahorro img {
+    width: 60px;
+  }
+  .nuevo-ahorro h5 {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=styles.css.map */
